@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria & Confeitaria Nosza</title>
+    <link rel="icon" href="img/logopadaria.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="stylesheet" href="styles.css">
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@700&family=Lobster&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="produtos.Js"></script>
+</head>
+
+<body>
+    <a href="https://api.whatsapp.com/send?phone=555194299041" target="_blank" class="flutuante">
+        <!----WHATSAPP FLUTUANTE DA DIREITA-->
+        <img src="img/whatsap-removebg-preview.png" alt="Ícone do Botão">
+    </a>
+
+    <img src="img/logopadaria.png" alt="Logo" class="logo">
+
+    <header>
+        <div class="segundoCabeçalho">
+            <ul class="list-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+            <div class="whatsapp">
+                <button style="background-color: transparent">📱 (51) 994299041</button>
+            </div>
+            <div class="whatsapp2">
+                <input type="text" id="search" placeholder="Pesquisar produtos..." onkeyup="filterProducts()">
+            </div>
+            <img src="img/segundocabeçalho.svg" alt="imagem do cabeçalho">
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="header-container">
+            <div class="header-text">
+                <h1>Transformando ingredientes em sorrisos todos os dias</h1>
+            </div>
+            <div class="outro-lado">
+                <h4>🕐 seg - sábado: 6:30 às 19h 🕐 Domingo: 7:30 às 19h </h4>
+            </div>
+            <div class="carrinho">
+                <ul>
+                    <li><a href="https://www.instagram.com/padaria_nosza?igsh=Y3lpczl3bzBuNXV0"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/zaffari/?locale=pt_BR"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+            <div id="cart-icon" onclick="aparecerCart()">🛒
+                <span id="cart-count">0 <br>itens</span>
+            </div>
+            <div id="cart-container" style="display: none;">
+                <button class="close-cart" onclick="aparecerCart()">❮</button>
+
+                <div class="seusProdutos">
+                    <h2>Seus produtos </h2>
+                </div>
+
+                <ul id="cart">
+                    <!--itens carrinho-->
+                </ul>
+                <div class="fnalizarCompra">
+                    <button id="finalize-button" onclick="finalizaCompra()">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <section class="cardapio" id="cardapio">
+        <h1>Pães</h1>
+        <div class="itens-cardapio" id="itens-paes"></div>
+        <h1>Doces</h1>
+        <div class="itens-cardapio" id="itens-doces"></div>
+
+        <h1>Salgados</h1>
+        <div class="itens-cardapio" id="itens-salgados"> </div>
+
+        <div id="no-products-found" style="display:none;">Produto não encontrado</div>
+    </section>
+
+    <section class="contatos" id="contatos">
+        <img id="imagem-acima-do-rodape" src="img/Untitled (9).svg" alt="imagem">
+
+        <h1>Sobre nós</h1>
+        <p>Padaria & Confeitaria Nosza, especializada na produção de pães, bolos, cucas, doces e salgados, com produção
+            própria e excelente qualidade dos produtos.</p>
+
+        <div class="outro-texto-sobre-imagem">
+            <h2>Contatos</h2>
+            <p>Endereço: Acesso G-dois Wenceslau Fontoura - Porto Alegre <br><br>
+                📧 padariaeconfeitariaNosza@gmail.com <br><br>
+                📱 (51) 994299041</p>
+
+            <div class="horarios">
+                <h1>Horarios </h1>
+                <p>◦ Seg - Sáb: 6:30 às 19h </br>
+                    ◦ Domingo: 7:30 às 19h </p>
+            </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-text-left">
+            &copy; 2024 Padaria & Confeitaria Nosza
+        </div>
+        <div class="footer-text-right">
+            Contato: padariaeconfeitariaNosza@gmail.com
+        </div>
+    </footer>
+
+</body>
+
+</html>

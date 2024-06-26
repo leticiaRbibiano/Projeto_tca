@@ -1,0 +1,57 @@
+ /* Media query para dispositivos com largura máxima de 1200px */
+ @media (max-width: 1200px) {
+    .main {
+        display: block; /* Altera o modelo de layout para bloco */
+    }
+}
+/* Media query para dispositivos com largura máxima de 980px */
+@media (max-width: 980px) {
+   html {
+       font-size: 100%; /* Reduz o tamanho da fonte para 50% */
+       
+   }
+}
+   /* Estilo para o menu de lista quando a largura da tela é no máximo 870px */
+   .content .list-menu
+    {
+       display: none; /* Oculta o menu de lista */
+       padding: 100%;
+     
+   }
+
+/* Media query para dispositivos com largura máxima de 720px */
+@media (max-width: 720px) {
+   /* Estilo para o título h1 dentro do conteúdo principal quando a largura da tela é no máximo 720px */
+   .conteudo-principal .h1  {
+       width: 100%; /* Define a largura do título */
+   }
+}
+
+@media (max-width: 768px) {
+    .abobora .button {
+        width: 100%; /* Altera o layout para ocupar toda a largura da tela em telas menores */
+    }
+    
+}
+
+@media (max-width: 645px) {
+   /* Estilo para a seção de contatos quando a largura da tela é no máximo 645px */
+   .contatos-secao {
+      width: 200px; /* Define a largura da seção de contatos */
+   }
+
+   /* Estilo para o título h2 dentro do conteúdo principal quando a largura da tela é no máximo 645px */
+   .conteudo-principal h2
+   .whatsapp2 {
+       width: 300px; /* Define a largura do título */
+       text-align: center; /* Alinha o texto ao centro */
+   }
+}
+
+/* Media query para dispositivos com largura máxima de 399px */
+@media (max-width: 399px) {
+   /* Estilo para o título h1 dentro do conteúdo principal quando a largura da tela é no máximo 399px */
+   .conteudo-principal h1 {
+      font-size: 3rem; /* Define o tamanho da fonte do título h1 */
+   }
+}
